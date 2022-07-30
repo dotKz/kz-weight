@@ -20,7 +20,7 @@
 ```TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", exports['qbr-core']:GetPlayerData().metadata["thirst"] + ConsumeablesAlcohol[itemName])```<br><br>
 <strong>//With :</strong><br>
 ```TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", exports['qbr-core']:GetPlayerData().metadata["thirst"] + ConsumeablesAlcohol[itemName].thirst)```<br>
-```TriggerServerEvent("QBCore:Server:SetMetaData", "metaweight", exports['qbr-core']:GetPlayerData().metadata["metaweight"] + ConsumeablesEat[itemName].metaweight)```<br><br>
+```TriggerServerEvent("QBCore:Server:SetMetaData", "metaweight", exports['qbr-core']:GetPlayerData().metadata["metaweight"] + ConsumeablesAlcohol[itemName].metaweight)```<br><br>
 
 - <strong>In :</strong> ```RegisterNetEvent("consumables:client:DrinkEat", function(itemName)```<br><br>
 <strong>//Replace :</strong><br>
@@ -36,7 +36,7 @@
 ```TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", exports['qbr-core']:GetPlayerData().metadata["thirst"] + ConsumeablesDrink[itemName])```<br><br>
 <strong>//With :</strong><br>
 ```TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", exports['qbr-core']:GetPlayerData().metadata["thirst"] + ConsumeablesDrink[itemName].thirst)```<br>
-```TriggerServerEvent("QBCore:Server:SetMetaData", "metaweight", exports['qbr-core']:GetPlayerData().metadata["metaweight"] + ConsumeablesEat[itemName].metaweight)```<br>  
+```TriggerServerEvent("QBCore:Server:SetMetaData", "metaweight", exports['qbr-core']:GetPlayerData().metadata["metaweight"] + ConsumeablesDrink[itemName].metaweight)```<br>  
   
 
 
